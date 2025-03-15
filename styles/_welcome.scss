@@ -1,0 +1,106 @@
+.welcome {
+    background-image: url('../images/office-bg.png');
+}
+
+.welcome__inner {
+    padding: 64px 223px 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    background: rgba(0, 47, 61, 0.77);
+    align-items: center;
+
+    @media (max-width: 991px) {
+        padding: 30px;
+    }
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    line-height: 1.4;
+}
+
+.welcome__hero {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: #fff;
+    max-width: 660px;
+
+    @media (max-width: 991px) {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.welcome__description {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+    max-width: 834px;
+
+    @media (max-width: 991px) {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.welcome__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.welcome__button {
+    min-width: 175px;
+    min-height: 50px;
+    background: #9bcc37;
+
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border: none;
+
+    &:hover {
+        color: #fff;
+        background: #77ba04;
+    }
+}
+
+.welcome__button--transparent {
+    border: 1px solid #9bcc37;
+    background: #fff;
+
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #9bcc37;
+
+    &:hover {
+        background: #fff;
+        border: 1px solid #77ba04;
+        color: #77ba04;
+    }
+}

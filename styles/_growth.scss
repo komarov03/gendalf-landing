@@ -1,0 +1,87 @@
+.growth {
+    backdrop-filter: blur(7px);
+    background: linear-gradient(211deg, rgba(40, 228, 115, 0.16) 0%, rgba(70, 205, 22, 0.14) 34.38%, rgba(39, 221, 209, 0.39) 64.58%, rgba(5, 176, 213, 0.32) 100%);
+}
+
+.growth__inner {
+    padding: 50px 85px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    align-items: center;
+
+    @media (max-width: 991px) {
+        gap: 15px;
+        padding: 30px 10px;
+    }
+}
+
+.growth__hero {
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: 36px;
+    color: #00b7ec;
+
+    @media (max-width: 991px) {
+        text-align: center;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 28px;
+        text-align: center;
+        color: #00b7ec;
+    }
+}
+
+.growth__info {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+.growth__info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+
+    @media (max-width: 991px) {
+        max-width: none;
+    }
+}
+
+.growth__info-description {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
+}
+
+.growth__media {
+    position: relative;
+}
+
+.growth__video {
+    max-width: 100%;
+    height: auto;
+}
+
+.growth__media::before {
+    position: absolute;
+    content: url('../images/icons/video-play.svg');
+    left: 0;
+    top: 0;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

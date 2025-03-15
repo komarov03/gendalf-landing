@@ -1,0 +1,126 @@
+.faq {}
+
+.faq__inner {
+    padding: 60px 125px;
+    display: flex;
+    flex-direction: row;
+
+    backdrop-filter: blur(7px);
+    background: linear-gradient(211deg, rgba(40, 228, 115, 0.16) 0%, rgba(70, 205, 22, 0.14) 34.38%, rgba(39, 221, 209, 0.39) 64.58%, rgba(5, 176, 213, 0.32) 100%);
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (max-width: 991px) {
+        padding: 30px 15px;
+    }
+}
+
+.faq__main {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    line-height: 1.4;
+}
+
+.faq__hero {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 26px;
+    color: #14afe8;
+}
+
+.faq__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.faq__item {
+    display: flex;
+    gap: 15px;
+}
+
+.faq__arrow {}
+
+.faq__text {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq__question {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #666;
+}
+
+.faq__answer {
+    padding-left: 32px;
+    transition: all 0.5s;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.faq__answer-text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+
+.faq__answer-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list__item {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    color: #666;
+}
+
+.faq__img {
+    object-fit: contain;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.faq__arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in;
+}
+
+/* Анимация стрелки при открытии */
+details[open] .faq__arrow {
+    transform: rotate(90deg);
+}
+
+details[open] .faq__question {
+    color: #00b7ec;
+}
+
+details[open] .faq__answer {
+    max-height: 500px;
+    opacity: 1;
+}

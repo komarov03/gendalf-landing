@@ -1,0 +1,65 @@
+.practice {
+    display: flex;
+    justify-content: center;
+    background-image:
+        linear-gradient(rgba(0, 47, 61, 0.5), rgba(0, 47, 61, 0.5)),
+        url('../images/practice-bg.png');
+    background-position: center;
+}
+
+.practice__inner {
+    padding: 70px 330px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+
+    @media (max-width: 991px) {
+        gap: 20px;
+        padding: 35px 10px;
+    }
+}
+
+
+.practice__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+}
+
+.practice__hero {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.4;
+
+    @media (max-width: 991px) {
+        font-family: $font-family;
+        font-weight: 300;
+        font-size: 28px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.practice__button {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+    border: none;
+    background: #9bcc37;
+
+    padding: 12px 65px;
+
+    &:hover {
+        color: #fff;
+        background: #77ba04;
+    }
+}
+
+.button {}

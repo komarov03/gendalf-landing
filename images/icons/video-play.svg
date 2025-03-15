@@ -1,0 +1,45 @@
+<svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.8" filter="url(#filter0_d_3_231)">
+    <foreignObject x="0" y="-4" width="98" height="102">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_3_231_clip_path);height:100%;width:100%"></div>
+    </foreignObject>
+    <g filter="url(#filter1_d_3_231)" data-figma-bg-blur-radius="4">
+      <circle cx="49" cy="45" r="45" fill="url(#paint0_linear_3_231)" shape-rendering="crispEdges" />
+      <circle cx="49" cy="45" r="44" stroke="url(#paint1_linear_3_231)" stroke-width="2" shape-rendering="crispEdges" />
+    </g>
+    <path d="M33.4282 23.4554C33.4282 21.146 35.9282 19.7026 37.9282 20.8573L74.7032 42.0894C76.7032 43.2441 76.7032 46.1308 74.7032 47.2855L37.9282 68.5176C35.9282 69.6723 33.4282 68.2289 33.4282 65.9195L33.4282 23.4554Z" fill="white" />
+  </g>
+  <defs>
+    <filter id="filter0_d_3_231" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_231" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_231" result="shape" />
+    </filter>
+    <filter id="filter1_d_3_231" x="0" y="-4" width="98" height="102" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_231" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_231" result="shape" />
+    </filter>
+    <clipPath id="bgblur_0_3_231_clip_path" transform="translate(0 4)">
+      <circle cx="49" cy="45" r="45" />
+    </clipPath>
+    <linearGradient id="paint0_linear_3_231" x1="4" y1="18.5" x2="94" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0.0117182" stop-color="#AED967" />
+      <stop offset="1" stop-color="#AED967" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="paint1_linear_3_231" x1="15.5461" y1="7.69737" x2="72.2401" y2="85.2632" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" />
+      <stop offset="1" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>
