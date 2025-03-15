@@ -1,51 +1,44 @@
-// Получаем все кнопки отправки и все поля ввода
 const buttons = document.querySelectorAll(".send");
 const inputs = document.querySelectorAll(".input");
 
-// Функция для проверки поля
-function validateInput(input) {
-  if (input.value.trim() === "") {
-    input.style.border = "2px solid #fd7583"; // Добавляем красную обводку
-    return false; // Поле не прошло проверку
-  } else {
-    input.style.border = "2px solid #9bcc37"; // Убираем обводку
-    return true; // Поле прошло проверку
-  }
-}
-
-// Функция для проверки всех полей
-function validateForm() {
-  let isValid = true; // Предполагаем, что форма валидна
-
-  inputs.forEach((input) => {
-    if (!validateInput(input)) {
-      isValid = false; // Если хотя бы одно поле не прошло проверку
-    }
-  });
-
-  return isValid; // Возвращаем результат проверки
-}
-
-// Добавляем обработчики для всех кнопок отправки
 buttons.forEach((button) => {
   button.addEventListener("click", function (event) {
     event.preventDefault(); // Предотвращаем отправку формы
 
-    if (validateForm()) {
-      console.log("Форма валидна, можно отправлять!");
-      // Здесь можно добавить отправку формы, например:
-      // document.querySelector(".interview__form").submit();
-    } else {
-      console.log("Пожалуйста, заполните все поля.");
-    }
+    inputs.forEach((input) => {
+      const errorIcon = input.nextElementSibling; // Иконка ошибки
+      const validIcon = errorIcon.nextElementSibling; // Иконка галочки
+
+      if (input.value.trim() === "") {
+        input.classList.remove("valid");
+        input.classList.add("error");
+        errorIcon.style.display = "block"; // Показываем иконку ошибки
+        validIcon.style.display = "none"; // Скрываем иконку галочки
+      } else {
+        input.classList.remove("error");
+        input.classList.add("valid");
+        errorIcon.style.display = "none"; // Скрываем иконку ошибки
+        validIcon.style.display = "block"; // Показываем иконку галочки
+      }
+    });
   });
 });
 
-// Убираем красную обводку при вводе текста
+// Убираем класс с ошибкой и добавляем галочку при вводе текста
 inputs.forEach((input) => {
   input.addEventListener("input", function () {
+    const errorIcon = input.nextElementSibling; // Иконка ошибки
+    const validIcon = errorIcon.nextElementSibling; // Иконка галочки
+
     if (input.value.trim() !== "") {
-      input.style.border = ""; // Убираем обводку
+      input.classList.remove("error");
+      input.classList.add("valid");
+      errorIcon.style.display = "none"; // Скрываем иконку ошибки
+      validIcon.style.display = "block"; // Показываем иконку галочки
+    } else {
+      input.classList.remove("valid");
+      errorIcon.style.display = "none"; // Скрываем иконку ошибки
+      validIcon.style.display = "none"; // Скрываем иконку галочки
     }
   });
 });
