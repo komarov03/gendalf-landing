@@ -208,6 +208,9 @@ table {
 
 .welcome {
   background-image: url("../images/office-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .welcome__inner {
@@ -414,13 +417,16 @@ table {
 
 .our-values {
   background: #e9e9e9;
+  display: flex;
+  justify-content: center;
 }
 
 .our-values__inner {
-  padding: 36px 130px 72px;
+  padding: 36px 10px 72px;
   display: flex;
   flex-direction: column;
   gap: 37px;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .our-values__inner {
@@ -441,11 +447,13 @@ table {
 }
 
 .our-values__slider {
+  padding: 0 10px;
   display: flex;
   flex-direction: row;
   gap: 37px;
   align-items: center;
-  overflow-x: scroll !important;
+  overflow-x: scroll;
+  max-width: 1255px;
 }
 
 .our-values__item {
@@ -536,14 +544,17 @@ table {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
   background: linear-gradient(211deg, rgba(40, 228, 115, 0.16) 0%, rgba(70, 205, 22, 0.14) 34.38%, rgba(39, 221, 209, 0.39) 64.58%, rgba(5, 176, 213, 0.32) 100%);
+  display: flex;
+  justify-content: center;
 }
 
 .growth__inner {
-  padding: 50px 85px;
+  width: 100%;
+  padding: 50px 10px;
   display: flex;
   flex-direction: column;
-  gap: 43px;
   align-items: center;
+  gap: 43px;
 }
 @media (max-width: 991px) {
   .growth__inner {
@@ -572,7 +583,7 @@ table {
 .growth__info {
   display: flex;
   flex-direction: row;
-  gap: 90px;
+  justify-content: space-between;
 }
 @media (max-width: 991px) {
   .growth__info {
@@ -737,6 +748,8 @@ table {
   justify-content: center;
   background-image: linear-gradient(rgba(0, 47, 61, 0.5), rgba(0, 47, 61, 0.5)), url("../images/practice-bg.png");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .practice__inner {

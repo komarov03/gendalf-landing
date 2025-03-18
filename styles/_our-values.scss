@@ -1,12 +1,15 @@
 .our-values {
     background: #e9e9e9;
+    display: flex;
+    justify-content: center;
 }
 
 .our-values__inner {
-    padding: 36px 130px 72px;
+    padding: 36px 10px 72px;
     display: flex;
     flex-direction: column;
     gap: 37px;
+    overflow: hidden;
 
     @media (max-width: 991px) {
         padding: 36px 10px 72px;
@@ -25,11 +28,13 @@
 }
 
 .our-values__slider {
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     gap: 37px;
     align-items: center;
-    overflow-x: scroll !important;
+    overflow-x: scroll;
+    max-width: 1255px;
 }
 
 .our-values__item {

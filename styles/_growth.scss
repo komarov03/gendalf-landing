@@ -1,14 +1,17 @@
 .growth {
     backdrop-filter: blur(7px);
     background: linear-gradient(211deg, rgba(40, 228, 115, 0.16) 0%, rgba(70, 205, 22, 0.14) 34.38%, rgba(39, 221, 209, 0.39) 64.58%, rgba(5, 176, 213, 0.32) 100%);
+    display: flex;
+    justify-content: center;
 }
 
 .growth__inner {
-    padding: 50px 85px;
+    width: 100%;
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
-    gap: 43px;
     align-items: center;
+    gap: 43px;
 
     @media (max-width: 991px) {
         gap: 15px;
@@ -35,7 +38,7 @@
 .growth__info {
     display: flex;
     flex-direction: row;
-    gap: 90px;
+    justify-content: space-between;
 
     @media (max-width: 991px) {
         flex-direction: column;
