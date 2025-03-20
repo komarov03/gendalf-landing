@@ -104,11 +104,22 @@
 
 .interview__actions {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
     @media (max-width: 991px) {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+.interview__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media (max-width: 991px) {
+        flex-direction: column;
+        gap: 5px;
     }
 }
 
@@ -174,4 +185,18 @@
     @media (max-width: 991px) {
         display: inline-block !important;
     }
+}
+
+.input.invalid {
+    border: 3px solid #ff0000 !important;
+}
+
+.input.valid {
+    border: 3px solid #9BCC37 !important;
+}
+
+.interview__category.invalid {
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    padding: 10px;
 }
